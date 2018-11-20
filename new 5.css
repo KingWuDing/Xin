@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> none </title>
+</head>
+
+<body>
+
+p.article:first-letter{color:#ff0000;}
+<p class="article"> 文章段落.</p>
+
+<style>
+	h1:before{content:url(smiley.gif);}
+</style>
+
+ul
+{
+		list-style-type:none;
+		margin:0;
+		padding:0;
+}
+
+li a.active{
+		background-color:#4CAF50;
+		color:white;
+}
+
+li a:hover:not(.active){
+	background-color:#555;
+	color:white;
+}
+
+ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	width:25%;
+	background-color:#f1f1f1;
+	height:100%;
+	position:fixed;
+	overflow:auto;
+}
+
+li
+{
+	display:inline;
+	text-decoration:none;
+}
+
+<html>
+<style>
+.dropdown{
+	position:relative;
+	display:inline-block;
+}
+.dropdown-content{
+	display:none;
+	position:absolute;
+	text-align:center;
+	background-color:#55f9f9;
+	min-width:160px;
+}
+
+.dropdown:hover  .dropdown-content{
+	display:block;
+}
+</style>
+</head>
+
+<body>
+
+<h2>鼠标移动后出现下拉菜单</h2>
+<p>将鼠标移动到指定元素后就能看到下拉菜单。</P>
+
+<div class="dropdown">
+<span>鼠标移动到我这。</span>
+<div class="dropdown-content">
+<p>菜鸟教程</p>
+<p>www.runoob.com</p>
+</div>
+</div>
+
+</body>
+
+</html>
+
+<style>
+.tooltip{
+		position:relative;
+		display:inline-block;
+		border-bottom:1px dotted black
+}
+
+.tooltip .tooltiptext{
+	visibility：hidden;
+	width:120px;
+	background-color:black;
+	color:#fff
+	text-align:center;
+	border-radius:6px;
+	padding:5px 0;
+	position:absolute;
+	z-index:1;
+}
+
+.tooltip:hover  .tooltiptext{
+	visibility:visible;
+}
+
+<style>
+
+<body style="text-align:center;">
+
+<div class="tooltip">鼠标移动到这里！
+<span class="tooltiptext"> 提示文本</span>
+</div>
+
+</body>
+</html>
+
+<div class="tooltip"> 鼠标移动到我这里！
+<span class=“tooltiptext">提示文本
+</span>
+</div>
+
+.tooltip .tooltiptext：：after{
+	content:"";
+	position:absolute;
+	top:100%;
+	left:50%;
+	margin-left:-5px;
+	border-width:5px;
+	border-style:solid;
+	border-color:black transparent transparent transparent;
+}
+
+.tooltip .tooltiptext{
+		opacity:0;
+		transition:opacity 1s;
+}
+
+.tooltip:hover  .tooltiptext{
+	
+	opacity 1;
+}
+
+<!--normally this stuff would be on the html element -->
+<!--[if lt IE 7]> <div class="ie ie6 lte9 lte8 lte7 "> <![endif]-->
+<!--[if IE 7]>    	<div class="ie ie7 lte9 lte8 lte7"> <![endif]-->
+<!--[if IE 8]>       <div class="ie ie8 lte9 lte8 "> <![endif]-->
+<!--[if IE 9]>      		<div class="ie ie9 lte9 ">  <![endif]-->
+<!--[if gt IE 9]>    			<div> <![endif]-->
+<!--[if !IE]>						<!-->    <div>       <!--[endif]-->
+
+<div class=”wrapper">
+ I have a  beautiful tooltip	.
+ <div  class="tooltip">   I am a tooltip  </div>
+  </div>
+</div>
+
+<style>
+div.img{
+	border:5px solid #ccc;
+}
+
+div.img:hover{
+	border:1px solid #777;
+}
+
+div.img img {
+	width:100%;
+	height:auto;
+	
+}
+
+div.desc{
+	padding:15px;
+	text-align:center;
+}
+
+*{
+box-sizing : border-box;}
+
+.responsive{
+	padding:6px 6px;
+	float:left;
+	width:25%;
+}
+
+@media  only screen and (max-width:700px){
+			.responsive{
+				width:49.9999%;
+				margin:6px 0;
+			}
+}
+
+@media only screen and (max-width:500px){
+	.responsive{
+		width:100%;
+	}
+}
+
+.clearfix : after{
+	content:"";
+	display:table;
+	clear:both;
+}
+
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center">响应式图片相册</h2>
+
+<div class="responsive">
+  <div class="img">
+	  <a target="_blank" href="img_fjords.jpg">
+		<img src="http://www.runoob.com/wp-content/uploads/2016/04/img_fjords.jpg" alt="Trolltunga Norway" width="300" height="200">
+		</a>
+		<div class="desc"> Add a description of the image here.</div>
+		</div>
+		</div>
+		
+		img
+		{
+					opacity:0.4;
+					filter:alpha(opacity=40);
+		}
+		
+		img:hover
+		{
+			opacity:1.0;
+			filter:alpha(opacity=100);
+			
+		<body>
+		<ul id="navlist
+	
+	

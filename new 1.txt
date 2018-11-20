@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程（runoob.com)
+</title>
+
+div
+
+{
+
+border:15px solid transparent ;
+width:250px;
+padding:10px 20px;
+
+}
+
+#round 
+
+{
+
+-webkit-border-image:url(border-image.jpg) 30 30 round;
+-o-border-image:url(border-image.jpg) 30 30 round;
+border-image:url(border.jpg ) 30 30 round ;
+
+}
+
+#stretch
+
+{
+
+-webkit-border-image:	url(border-image.jpg) 30 30 stretch;
+-o-border-image:url(border-image.jpg) 30 30 stretch;
+border-image:url(border.jpg ) 30 30 stretch ;
+
+}	
+
+</style>
+</head>
+
+<body>
+
+<p> 
+
+<b> 注意：</b > Internet Explorer 不支持 border-image 属性。
+
+</p>
+
+<p> border-image 属性用于设置图片的边框 。</p >
+。以填充该区域。
+<div id="round"	>		这里，图像被平铺以填充该区域。	</div>
+<br>
+<div id="stretch"> 这里，图像被拉伸以填充该区域。</div >
+
+<p>这是我们使用的图片素材：</p>
+<img src="/image /border.png"/>
+
+</body >
+</html>
+
+<map name="planetmap">
+
+<area shape="rect" coords="0,0,82,126" alt="sun" href="sun.html">
+<area shape="circle" coords="90,58,3" alt="Mercury" href="mercury.html>
+<area shape="circle" coords="124,58,8" alt="venus" href="venus.html">
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程（runoob）</title>
+</head>
+
+<body>
+
+<h1>我的第一个JavaScript 程序</h1>
+
+<p>JavaScropt 能够对事件做出反应。比如对按钮的点击：</p>
+
+<button type="button" onclick="alert('欢迎！ ‘）“> 点我！</button>
+
+</body>
+
+</html>
+
+<body>
+<h1> 我的第一个JavaScript</h1>
+
+<p id="demo">JavaScript 能改变 HTML 元素的内容。</p>
+
+<script>  
+function myFunction()
+{ 
+    x=document.getElementById("demo");
+	x.innerHTML="Hello JavaScript!";
+	
+}
+
+</script>
+
+<button type="button" onclick="myFunction()"> 点击 </button>
+
+</body>
+
+</html>
+
+
+

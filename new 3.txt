@@ -1,0 +1,86 @@
+<body>
+
+<form action="demo-form.php">
+country code:<input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+<input type="submit">
+</form>
+
+</body>
+
+<body>
+
+<div id="result"></div>
+<script>
+if （typeof(storage)!=="undefined")
+{
+  localStorage.sitename="菜鸟教程“；
+  document.getElementById("result").innerHTMl="网站名：”+localStorage.sitename;
+}
+  else
+{
+  document.getElementById("result").innerHTMl="对不起，您的浏览器不支持不支持we存储。“；
+  }
+</script>
+
+</body>
+
+var db=openDatabase('mydb','1.0','Test DB',2*1024*1024);
+db.transaction(function(tx){
+tx.executesql('CREATE TABLE IF NOT EXISTS LOGS(id unique,log)');
+
+msg='<p>数据表已创建，且插入了两条数据。</p>';
+document.querySelector('#status').innerHTMl=msg;
+
+db.transaction(function(tx){
+tx.executesql('SELECT *FROM LOGS',[],function(tx,results){
+var len= results.rows.length,i;
+msg="<p>查询记录条数：”+len+"</p>";
+document.querySelector('#status').innerHTMl+=msg;
+
+for(i=0;i<len;i++){
+msg="<p><b>"+results.rows.item(i).log+"</b></p>";
+document.querySelector（’#status‘）.innerHTMl+=msg;
+}
+},null);
+});
+
+<html manifest="demo.appcache">
+
+<body>
+
+</body>
+
+function startWorker(){
+  if(typeof(Worker)!=="undefined"){
+  if (typeof(w)=="undefined"){
+  w=new Worker("demo_workers.js");
+  }
+  w.onmessage=function(event){
+    document.getElementById("result").innerHTMl=event.data;};
+	}
+	else{
+	document.getElementById("result").innerHTMl="抱歉，你的浏览器不支持Web Workers"}
+	
+	}
+	
+	function stopWorker()
+	{
+	w.terminate();
+	w=undefined;
+	}
+	</script>
+	
+	</body>
+
+<body>
+<h1>获取服务器端更新数据</h1>
+<div id="result"><div>
+
+<script>
+if (typeof(EventSource）！=="undefined")
+{
+  var source=new EventSource("demo_sse.php");
+  source.onmessage=function(event)
+  {
+  document.getElementById("result").innerHTMl+=event.data+"<br>";
+  
