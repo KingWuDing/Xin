@@ -47,7 +47,7 @@ if(Array.isArray){
 }
 
 if (cars instanceof Array){
-		document.write("该对象是一个数组“);
+		document.write("该对象是一个数组");
 }
 
 document.getElementById("demo").innerHTML="你好";
@@ -62,17 +62,18 @@ people.eat=function(){ }
 var d=new Date().getDay();
 switch(d)
 {
-	case 0:x="今天是星期日”；
+	case 0:x="今天是星期日"；
 	break;
 
 <body>
 
 <script>
-cars=array{"BMW","Volvo","Saab","Ford"};
+	
+cars = array{"BMW","Volvo","Saab","Ford" };
 for (var i=0;i<cars.length;i++){
-document.write(cars[i] + "<br>"};
-}
+document.write(cars[i] + "<br>"}
+};
 
 </script>
 
-<p>JS中，数组是一种特殊的对象。</p>
+<p> JS中，数组是一种特殊的对象。</p>
