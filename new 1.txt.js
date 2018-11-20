@@ -50,7 +50,7 @@ if (cars instanceof Array){
 		document.write("该对象是一个数组“);
 }
 
-document.getElementById("demo").innerHTML="你好”;
+document.getElementById("demo").innerHTML="你好";
 
 var people={name:"Tom,age:22,eat: function(){  } }
 
